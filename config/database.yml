@@ -82,7 +82,5 @@ test:
 production:
   <<: *default
   database: scheduled_tweets_production
-  adapter: postgresql
-  host: localhost
   username: scheduled_tweets
   password: <%= ENV["SCHEDULED_TWEETS_DATABASE_PASSWORD"] %>
